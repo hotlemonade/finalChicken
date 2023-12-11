@@ -79,7 +79,7 @@ audio{
         .iteam{
             .city{
                 width: 100%;
-                height: 50%;
+                height: 80%;
                 position: absolute;
                 bottom: 0;
                 
@@ -296,7 +296,11 @@ audio{
             }
     
             .city-bottom{
+                position: absolute;
+                top: 0;
                 transform: rotate(180deg);
+                width: 100%;
+                height: 65%;
             }
         }
     }
