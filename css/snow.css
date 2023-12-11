@@ -1,0 +1,18 @@
+@keyframes snow {
+    0% { background-position: 0 0, 0 0, 0 0, 0 0; }
+    40% { background-position: 10px 14vmin, -20px 28vmin, 20px 20vmin, 10px 24vmin; }
+    60% { background-position: -10px 21vmin, -30px 42vmin, 30px 30vmin, 15px 36vmin; }
+    100% { background-position: 0 35vmin, 0 70vmin, 0 50vmin, 0 60vmin; }
+  }
+
+  .big-wrap {
+    /* overflow: hidden; */
+    background-image:
+      radial-gradient(circle at 50% 50%, rgb(47, 47, 47) 2.5%, transparent 0),
+      radial-gradient(circle at 30% 90%, rgb(119, 119, 119) 1.5%, transparent 0),
+      radial-gradient(circle at 70% 10%, rgb(79, 79, 79) 1%, transparent 0),
+      radial-gradient(circle at 10% 40%, rgb(28, 28, 28) 1%, transparent 0);
+    background-size: 45vmin 35vmin, 50vmin 70vmin, 60vmin 50vmin, 65vmin 60vmin;
+    background-position: 0 0;
+    animation: snow infinite 10s linear;
+  }

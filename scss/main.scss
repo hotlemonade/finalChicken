@@ -1,0 +1,720 @@
+@charset "utf-8";
+@import 'reset';
+
+.base{
+    max-width: 2000px;
+    width: 100%;
+    margin:  0 auto;
+}
+
+audio{
+    background-color: #000;
+    width: 100px;
+    opacity: 0.1;
+}
+
+.big-wrap{
+    // height: 3000px;
+    background-color: black;
+
+    .intro{
+        height: 100vh;
+        position: relative;
+        
+        h1{
+            width: 100%;
+            text-align: center;
+            margin: auto 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+        }
+    }
+    
+    @keyframes birdFly{
+        0%{
+            transform: translate(0,0)();
+        }
+    
+        100%{
+            transform: translate(400px, -1000px);
+        }
+    }
+    
+    .revolution{
+        height: 100vh;
+        position: relative;
+        // background-color: bisque;
+    
+        .revo-text{
+    
+            transition:1s;
+            opacity:0;
+            text-align: center;
+    
+            &.showed {
+                opacity:1;
+                transform:translate(0,0);
+                
+            }
+            
+            p:nth-of-type(1){
+                
+                color: white;
+                font-size: 40px;
+                
+            }
+    
+            p:nth-of-type(2){
+                
+                color: white;
+                font-size: 40px;
+            }
+            
+            
+        }
+    
+        .iteam{
+            .city{
+                width: 100%;
+                height: 50%;
+                position: absolute;
+                bottom: 0;
+                
+            }
+    
+            .glassBird{
+                height: 60%;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    
+        .fly-bird-iteam{
+    
+            
+            
+            .flyBird1 {
+            
+            // display:block;
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            transition:6s;
+            opacity:1;
+            height: 20%;
+             
+    
+                &.showed {
+                    opacity:1;
+                    transform:translate(2000px,-1700px);
+                    
+                }
+            }
+    
+            .flyBird2 {
+                
+                // display:block;
+                position: absolute;
+                bottom: 100px;
+                left: -300px;
+                transition:6s;
+                opacity:1;
+                height: 20%;
+                 
+        
+                    &.showed {
+                        opacity:1;
+                        transform:translate(1700px,-2000px);
+                        
+                    }
+                }
+    
+            .flyBird3 {
+            
+            // display:block;
+            position: absolute;
+            bottom: 100px;
+            left: -200px;
+            transition:3s;
+            opacity:1;
+            height: 20%;
+             
+    
+                &.showed {
+                    opacity:1;
+                    transform:translate(1500px,-2500px);
+                    
+                }
+            }
+            
+            .flyBird4 {
+                
+                // display:block;
+                position: absolute;
+                bottom: 100px;
+                left: 300px;
+                transition:5s;
+                opacity:1;
+                height: 20%;
+                 
+        
+                    &.showed {
+                        opacity:1;
+                        transform:translate(1500px,-2200px);
+                        
+                    }
+                }
+    
+            .flyBird5 {
+            
+            // display:block;
+            position: absolute;
+            bottom: 100px;
+            left: 700px;
+            transition:6s;
+            opacity:1;
+            height: 30%;
+             
+    
+                &.showed {
+                    opacity:1;
+                    transform:translate(1500px,-1000px);
+                    
+                }
+            }
+        }
+    
+        
+    }
+    
+    .revolution-text{
+        height: 120vh;
+        opacity:0;
+        text-align: center;
+        transition:1s;
+    
+        &.showed {
+            opacity:1;
+            transform:translate(0,0);
+            
+        }
+        
+        p{
+            margin-top: 50%;
+            font-size: 110px;
+            color: white;
+            
+        }
+    }
+    .blackShade{
+        // outline: 1px solid red;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 0, 0.8), rgba(0,0,0,1));
+        height: 200px;
+        width: 100%;
+        position: absolute;
+        bottom: -100px;
+    
+    }
+    
+    
+    
+    .revolution-text3{
+        height: 120vh;
+       
+        .chicken-text{
+            
+            transition:1s;
+            opacity:0;
+            text-align: center;
+    
+            &.showed {
+                opacity:1;
+                transform:translate(0,0);
+                
+            }
+        
+            p:nth-child(1){
+                margin-top: 30%;
+                font-size: 40px;
+                color: white;
+            }
+        
+            p:nth-child(2){
+                margin-top: 45%;
+                color: white;
+                font-size: 100px;
+            }
+        }
+    
+        
+        
+    
+        
+        
+    }
+    
+    
+    
+    .revolution-bottom{
+        height: 100vh;
+        position: relative;
+        background-image:url(../img/fire-15.gif);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        
+        
+    
+        .blackShade-bottom{
+            background: linear-gradient(rgba(0, 0, 0, 1), rgb(0, 0, 0.8), rgba(0,0,0,0));
+            height: 1000px;
+            width: 100%;
+            position: absolute;
+            top: -500px;
+        }
+        .iteam{
+            
+    
+            .back-bird{
+                position: absolute;
+                left: 550px;
+                top: -50%;
+                transition:3s;
+                // transform: translateX(-50%);
+                height: 90%;
+
+                &.showed {
+                    opacity:1;
+                    transform:translateY(500px);
+                    
+                }
+            }
+    
+            .city-bottom{
+                transform: rotate(180deg);
+            }
+        }
+    }
+    
+    .bhc{
+        height: 100vh;
+        .iteam{
+            height: 120vh;
+            position: relative;
+    
+            .fire1{
+                position: absolute;
+                top: -8%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 3000px;
+                height: 500px;
+            }
+    
+            .store{
+                // height: 80%;
+                width: 3000px;
+                position: absolute;
+                
+                left: 50%;
+                transform: translateX(-50%);
+            }
+    
+            .bird3{
+                position: absolute;
+                height: 60%;
+                top: 25%;
+                right: 7%;
+            }
+    
+            .bird2{
+                position: absolute;
+                height: 50%;
+                top: 37%;
+                left: 10%;
+                
+            }
+    
+            .bird3-fire{
+                position: absolute;
+                height: 200px;
+                width: 200px;
+                top: 30%;
+                right: 20%;
+            }
+    
+            .bird2-fire{
+                position: absolute;
+                height: 200px;
+                width: 300px;
+                top: 30%;
+                left: 14%;
+            }
+    
+            .bird1-fire{
+                position: absolute;
+                height: 200px;
+                width: 300px;
+                top: 25%;
+                left: 49.5%;
+                transform: translateX(-50%);
+            }
+    
+            .bird1{
+                position: absolute;
+                height: 600px;
+                top: 35%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+    
+            .no-chicken{
+                position: absolute;
+                height: 100px;
+                top: 0%;
+                left: 12%;
+                // transform: translateX(-50%);
+            }
+    
+        }
+    }
+    
+    .protest{
+        height: 3000px;
+        position: relative;
+        .protest-iteam{
+    
+            .bird-nomore{
+                position: absolute;
+                top: 22%;
+                left: -100%;
+                transition:1.5s;
+                opacity:1;
+                
+                &.showed {
+                    opacity:1;
+                    transform:translate(70%,0px);
+                    
+                }
+            }
+    
+            .protest-bird1-text{
+                position: absolute;
+                top: 70%;
+                right: -100%;
+                transition:2s;
+                opacity:1;
+                width: 60%;
+    
+                &.showed {
+                    opacity:1;
+                    transform:translate(-220%,0px);
+                    
+                    
+                }
+            }
+    
+            .protest-bird1{
+                position: absolute;
+                top: 55%;
+                right: -50%;
+                transition:1.5s;
+                opacity:1;
+                height: 1000px;
+                
+    
+                &.showed {
+                    opacity:1;
+                    transform:translate(-50%,0px);
+                    
+                }
+            }
+    
+            
+        }
+    }
+    
+    .game{
+        height: 100vh;
+        text-align: center;
+
+        .game-text{
+
+            transition:1s;
+            opacity:0;
+            text-align: center;
+            
+
+            &.showed {
+                opacity:1;
+                transform:translate(0,0);
+                
+            }
+
+            p{
+                margin-top: 20%;
+                font-size: 40px;
+                color: white;
+            }
+        }
+        
+    }
+    
+    .chicken-game{
+        height: 140vh;
+        text-align: center;
+    
+        p:nth-child(1){
+            margin-top: 20%;
+            font-size: 350px;
+            color: white;
+            margin-bottom: 300px;
+            
+            
+            
+        }
+
+        p:nth-child(2){
+            margin-bottom: 300px;
+            font-size: 40px;
+            color: white;
+        }
+    
+        button{
+            height: 300px;
+            width: 600px;
+            border: 2px solid rgb(86, 86, 86);
+            border-radius: 30px;
+            background-color: black;
+            margin-bottom: 200px;
+    
+            a{
+                
+                width: 600px;
+                height: 300px;
+                color: rgb(38, 38, 38);
+                font-size: 70px;
+                transition: 0.5s;
+            }
+    
+            a:hover{
+                color: white;
+    
+            }
+    
+    
+        }
+        
+    }
+
+}
+
+
+body {
+    background:#000;
+}
+
+// game
+@keyframes door{
+    0% {transform: scaleX(1);}
+    100% {transform: scaleX(0);}
+}
+
+@keyframes oppen{
+    0%{
+        transform: translateY(290px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes text{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+.door{
+    height: 100vh;
+    width: 50vw;
+    background-color: #fff; 
+    animation: door 3s both;
+    position:fixed;
+    top:0;
+
+    &.left {
+        transform-origin:left center;
+        left:0;
+    }
+    &.right {
+        transform-origin:right center;
+        right:0;
+    }
+}
+
+h1 {
+    text-align:center;
+    font-size:50px;
+    padding:30px 0;
+    color:#fff;
+    position:fixed;
+    top:800px;
+    left:0;right:0;
+    transition:0.5s ease-in;
+    animation: text 2s ease-in;
+}
+
+.game-container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    gap:70px;
+
+    button{
+        position: fixed;
+        height: 50px;
+        width: 100px;
+        border: 1px solid #444444;
+        background-color: #000;
+        color: #444444;
+        border-radius: 30px;
+        transition: 0.5s;
+        font-size: 20px;
+    }
+
+    button:hover{
+        border: 1px solid #fff;
+        color: #fff;
+    }
+
+    h1 {
+        text-align:center;
+        font-size:50px;
+        padding:30px 0;
+        color:#fff;
+        position:fixed;
+        top:80%;
+        left:0;right:0;
+        
+        transition:0.5s ease-in;
+        animation: text 3s ease-in;
+    }
+
+    .plate{ 
+        position: relative;
+        height: 50vh;
+        flex-basis: 30vw;
+        cursor:pointer;
+        transition:0.5s;
+
+        &:hover{
+            scale: 1.1;
+        }
+
+
+        .win-game{
+            
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .lose-game{
+            
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+      
+
+        &.open {
+            .top {
+                transform:translate(-50%, -200px);
+            }
+
+        }
+
+        & > * {
+            position:absolute;
+        }
+
+        .top{
+          
+            bottom: 10px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 85%; 
+            transition:0.5s ease-in;
+            
+            
+
+        }
+
+        .top-open-win{
+          
+            bottom: 300px;
+            left: 37px;
+            // transform: translate(-50%, 0);
+            width: 85%; 
+            transition:0.5s ease-in;
+            animation: oppen 3s ease-in;
+            
+
+        }
+
+        .top-open-lose{
+            bottom: 300px;
+            left: 37px;
+            // transform: translate(-50%, 0);
+            width: 85%; 
+            transition:0.5s ease-in;
+            animation: oppen 3s ease-in;
+        }
+
+        .lose{
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width:30%;   
+        }
+
+        .chicken {
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width:50%;   
+        }
+
+        .bottom{
+           
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+    }
+}
+

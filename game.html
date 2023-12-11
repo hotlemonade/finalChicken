@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <audio id="myAudio" loop autoplay controls>
+        <source src="./mp3/game.mp3" type="audio/mpeg">
+    </audio>
+    <h1>BHC의 운명은 그대에게 달렸다</h1>
+    <section class="game-container"> 
+        <div class="plate a"> 
+            <img src="./img/bottom.png" alt="" class="bottom"> 
+            <img src="./img/chicken.png" alt="" class="chicken">
+            <img src="./img/top.png" alt="" class="top">
+            <a href="./endGame.html" class="win-game"></a>
+        </div>
+        
+        <div class="plate b">
+            <img src="./img/bottom.png" alt="" class="bottom"> 
+            <img src="./img/top.png" alt="" class="top"> 
+            <a href="./loseGame.html" class="lose-game"></a>
+        </div>
+
+    </section> 
+    <div class="doors">
+        <div class="door left"></div>
+        <div class="door right"></div>
+    </div>
+    
+   
+    
+    
+    
+    
+    <!-- <script>
+        const plates = document.querySelectorAll('.plate'); 
+        plates.forEach( (plate,i) => {
+            plate.addEventListener('click', ()=> {
+
+               plate.classList.add('open')
+            })
+        })
+    </script> -->
+    
+</body>
+</html>
